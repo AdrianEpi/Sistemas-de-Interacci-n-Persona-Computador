@@ -1,0 +1,120 @@
+<!DOCTYPE html >
+	
+	<!-- Cabecera -->
+	<head>
+		<title>Infotienda.es</title>
+		
+		<!--Para leer el codigo javascript-->
+		<script type="text/javascript" src="js/javascript.js"></script>
+		
+		<!--lee codigo css-->
+		<link type="text/css" href="css/style.css" rel="stylesheet" media="screen"/>
+	</head>
+
+	<!-- Contenido -->
+	<body>
+		<div id="todo" class="todoNo">
+			<div id="menu" class="menuNo">
+					
+				<!--Producto del 1 al 9-->
+				<div id="div1" name="DIVS"></div>
+				<div id="div2" name="DIVS"></div>
+				<div id="div3" name="DIVS"></div>
+				<div id="div4" name="DIVS"></div>
+				<div id="div5" name="DIVS"></div>
+				<div id="div6" name="DIVS"></div>
+				<div id="div7" name="DIVS"></div>
+				<div id="div8" name="DIVS"></div>
+				<div id="div9" name="DIVS"></div>
+					
+				<!--Botones de compra-->
+				<div id="divbotones">
+					<input type="button" id="botonTotal" value="Calcular total"/>
+					<input type="button" id="botonDatos" value="Datos personales" disabled="disabled"/>
+					<input type="button" id="botonConfirmar" value="Confirmar pedido" disabled="disabled"/>
+				 </div>
+
+				<!--zona de compra, tablas, formularios, etc.-->
+				<div id="divZonaCompra" class="divZonaCompraNo">
+
+				
+					<!--Carrito de la compra-->
+					<div id="divTotal" class="divsNo">
+						<p><b>Carrito de la compra, si quiere hacer alguna modificacion aun esta a tiempo:</b></p>
+						<table id="tablaTotal"></table>
+					</div>
+				
+				
+					<!--Datos personales-->				
+					<div id="divDatos" class="divsNo">
+						<p><b>Introduzca sus datos personales:</b></p>
+
+							<div id="divDatosPersonales0">
+								<div id="divDatosPersonales1">
+									<label>Nombre completo:</label><br/>
+									<input type="text" id="nombre" value="" size="26" /><br/>
+									
+									
+									<label>DNI:</label><br/>
+									<input type="text" id="dni" value="" size="8" maxlength="9" /><br/>
+									
+									
+									<label>Fecha de nacimiento:</label><br/>
+									<select id="fechaNacimientoDia">
+										<option value="">&nbsp;dia&nbsp;</option>
+									</select>
+									<select id="fechaNacimientoMes">
+										<option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mes</option>
+										<option value="1">Enero</option>
+										<option value="2">Febrero</option>
+										<option value="3">Marzo</option>
+										<option value="4">Abril</option>
+										<option value="5">Mayo</option>
+										<option value="6">Junio</option>
+										<option value="7">Julio</option>
+										<option value="8">Agosto</option>
+										<option value="9">Septiembre</option>
+										<option value="10">Octubre</option>
+										<option value="11">Noviembre</option>
+										<option value="12">Diciembre</option>
+									</select>			
+									<select id="fechaNacimientoAnio">
+										<option value="">&nbsp;&nbsp;año&nbsp;</option>
+									</select><br/>
+								</div>
+								
+								<div id="divDatosPersonales2">
+									<label>Telefono movil:</label><br/>
+									<input type="text" id="movil" value="" size="8" maxlength="9"/><br/>
+
+									<label>Email:</label><br/>
+									<input type="text" id="email1" value="" size="25" /><br/>
+									
+									<label>Repita el email:</label><br/>
+									<input type="text" id="email2" value="" size="25" />							
+								</div>
+							</div>
+
+
+							<label>Isla:</label>
+							<select id="Isla">
+								<option value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+								<option value="4">Lanzarote</option>
+								<option value="2">Fuerteventura</option>
+								<option value="3">Gran Canaria</option>
+								<option value="7">Tenerife</option>
+								<option value="5">La Gomera</option>
+								<option value="6">La Palma</option>
+								<option value="1">El Hierro</option>
+
+
+							</select>
+						</div>								
+					</div>					
+									
+				</div>
+			</div>	
+		</div>
+		<p class="pie">Bienvenido a nuestra Página web</p>
+	</body>
+</html>
